@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",                          // Підтримка сучасного JS
+    "lib": ["es6", "dom"],                    // Для Cypress (браузерне середовище)
+    "module": "commonjs",                     // Стиль імпортів, сумісний із Node.js
+    "moduleResolution": "node",
+    "esModuleInterop": true,                  // Щоб працювали імпорти типу: import fs from 'fs'
+    "types": ["cypress"],                     // Додає глобальні типи: cy, describe, it тощо
+    "strict": true,                           // Увімкнено строгі перевірки
+    "skipLibCheck": true ,
+    "resolveJsonModule": true,                     // Ігнорувати перевірку типів у node_modules
+  },
+  "include": [
+    "cypress/**/*.ts",                        // Усі тести, команди, пейдж-об’єкти тощо
+    "cypress.config.ts"                       // TypeScript-конфіг
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

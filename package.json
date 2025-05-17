@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "script": "npx cypress run",
+    "open": "cypress open",
+    "tests:ci": "npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}"
+
+  },
+  "devDependencies": {
+    "cypress": "^14.3.3"
+  },
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}
