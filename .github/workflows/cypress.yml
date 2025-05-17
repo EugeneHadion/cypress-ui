@@ -23,3 +23,5 @@ jobs:
 
       - name: Run Cypress tests with recording
         run: npm run tests:ci
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}

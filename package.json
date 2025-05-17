@@ -2,7 +2,7 @@
   "scripts": {
     "script": "npx cypress run",
     "open": "cypress open",
-    "tests:ci": "npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}"
+    "tests:ci": "npx cypress run --record --key CYPRESS_RECORD_KEY"
 
   },
   "devDependencies": {
